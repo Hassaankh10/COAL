@@ -188,7 +188,9 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <MASM Include="source.asm" />
+    <MASM Include="source.asm">
+      <IncludePaths Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">C:\irvine</IncludePaths>
+    </MASM>
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
